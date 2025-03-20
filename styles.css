@@ -1,0 +1,90 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background Gradient */
+body {
+    background: linear-gradient(135deg, #d4e2b0, #f3d79b);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    position: absolute;
+    top: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Container */
+.container {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    max-width: 900px;
+}
+
+/* Gambar Sarang */
+.nest-image {
+    width: 300px;
+    height: auto;
+}
+
+/* Konten */
+.content {
+    margin-left: 40px;
+}
+
+/* Judul */
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Deskripsi */
+p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    max-width: 500px;
+}
+
+/* Tombol */
+.start-btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #FFC857;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.start-btn:hover {
+    background-color: #ffb347;
+}
