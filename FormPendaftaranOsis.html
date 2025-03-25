@@ -6,76 +6,78 @@
     <title>FormPendaftaranOsis</title>
 </head>
 <body>
-    <table cellpadding="10" border="3" align="center" rules="none">
-        <tr bgcolor="blue" style="color: white;">
-            <th colspan="2">FORM PENDAFTARAN OSIS</th>
-        </tr>
-        <tr>
-            <td>Nama Lengkap</td>
-            <td><input type = "text" placeholder = "Nama Lengkap"></td>
-        </tr>
-        <tr>
-            <td>Nama Panggilan</td>
-            <td><input type = "text" placeholder = "Nama Panggilan"></td>
-        </tr>
-        <tr>
-            <td>Tanggal Tempat Lahir</td>
-            <td><input type = "date" placeholder = "dd/mm/yyyy"></td>
-        </tr>
-        <tr>
-            <td>Jenis Kelamin</td>
-            <td>
-                <label>Laki-Laki <input type = "radio"></label>
-                <label>Perempuan <input type = "radio"></label>
-            </td>
-        </tr>
-        <tr>
-            <td>Nomor Telepon</td>
-            <td><input type = "text" placeholder = "Telepon" pattern="[0-9]{11,13}" maxlength="13" onkeypress="return event.charCode >= 48 && event.charCode <= 57"></td>
-        </tr>
-        <tr>
-            <td>Jurusan</td>
-            <td>
-                <label>IPA <input type = "radio"></label>
-                <label>IPS <input type = "radio"></label>
-                <label>BAHASA <input type = "radio"></label>
-            </td>
-        </tr>
-        <tr>
-            <td>Agama</td>
-            <td>
-                <select>
-                    <option value ="1">Islam</option>
-                    <option value ="2">Katolik</option>
-                    <option value ="3">Protestan</option>
-                    <option value ="4">Buddha</option>
-                    <option value ="5">Hindu</option>
-                    <option value ="6">Konghucu</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <td>Hobi</td>
-            <td>
-                <label>Membaca Buku <input type = "checkbox"></label>
-                <label>Menulis <input type = "checkbox"></label>
-                <label>dll <input type = "checkbox"></label>
-            </td>
-        </tr>
-        <tr>
-            <td>Alasan/Motivasi untuk mendaftar</td>
-            <td><textarea rows="10" cols="33"></textarea></td>
-        </tr>
-        <tr>
-            <td>Foto 3X4</td>
-            <td><input type = "file"></td>
-        </tr>
-        <tr>
-            <td colspan="2" align="center">
-                <input type = "submit" value = "Daftar">
-                <input type = "reset" value = "Reset">
-            </td>
-        </tr>
-    </table>
+    <form>
+        <table cellpadding="10" border="3" align="center" rules="none">
+            <tr bgcolor="blue" style="color: white;">
+                <th colspan="2">FORM PENDAFTARAN OSIS</th>
+            </tr>
+            <tr>
+                <td>Nama Lengkap</td>
+                <td><input type = "text" placeholder = "Nama Lengkap" required></td>
+            </tr>
+            <tr>
+                <td>Nama Panggilan</td>
+                <td><input type = "text" placeholder = "Nama Panggilan"></td>
+            </tr>
+            <tr>
+                <td>Tanggal Tempat Lahir</td>
+                <td><input type = "text" placeholder = "dd/mm/yyyy" size = "17" required></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    <label>Laki-Laki <input type = "radio" required></label>
+                    <label>Perempuan <input type = "radio" required></label>
+                </td>
+            </tr>
+            <tr>
+                <td>Nomor Telepon</td>
+                <td><input type = "text" placeholder = "Telepon" pattern="0[0-9]{10,12}" maxlength="13" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required></td>
+            </tr>
+            <tr>
+                <td>Jurusan</td>
+                <td>
+                    <label>IPA <input type = "radio" required></label>
+                    <label>IPS <input type = "radio" required></label>
+                    <label>BAHASA <input type = "radio" required></label>
+                </td>
+            </tr>
+            <tr>
+                <td>Agama</td>
+                <td>
+                    <select required>
+                        <option value ="1">Islam</option>
+                        <option value ="2">Katolik</option>
+                        <option value ="3">Protestan</option>
+                        <option value ="4">Buddha</option>
+                        <option value ="5">Hindu</option>
+                        <option value ="6">Konghucu</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Hobi</td>
+                <td>
+                    <label>Membaca Buku <input type = "checkbox"></label>
+                    <label>Menulis <input type = "checkbox"></label>
+                    <label>dll <input type = "checkbox"></label>
+                </td>
+            </tr>
+            <tr>
+                <td>Alasan/Motivasi untuk mendaftar</td>
+                <td><textarea rows="10" cols="33"></textarea></td>
+            </tr>
+            <tr>
+                <td>Foto 3X4</td>
+                <td><input type = "file" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type = "submit" value = "Daftar">
+                    <input type = "reset" value = "Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
