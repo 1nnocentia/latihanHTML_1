@@ -21,13 +21,13 @@
             </tr>
             <tr>
                 <td>Tanggal Tempat Lahir</td>
-                <td><input type = "text" placeholder = "dd/mm/yyyy" size = "17" required></td>
+                <td><input type = "date" required></td>
             </tr>
             <tr>
                 <td>Jenis Kelamin</td>
                 <td>
-                    <label>Laki-Laki <input type = "radio" required></label>
-                    <label>Perempuan <input type = "radio" required></label>
+                    <label><input type = "radio" name = "jenis_kelamin" value = "Laki-Laki" required> Laki-Laki</label>
+                    <label><input type = "radio" name = "jenis_kelamin" value = "Perempuan" required> Perempuan</label>
                 </td>
             </tr>
             <tr>
@@ -37,30 +37,30 @@
             <tr>
                 <td>Jurusan</td>
                 <td>
-                    <label>IPA <input type = "radio" required></label>
-                    <label>IPS <input type = "radio" required></label>
-                    <label>BAHASA <input type = "radio" required></label>
+                    <label>IPA <input type = "radio" name = "jurusan" value = "IPA" required></label>
+                    <label>IPS <input type = "radio" name = "jurusan" value = "IPS" required></label>
+                    <label>BAHASA <input type = "radio" name = "jurusan" value = "BAHASA" required></label>
                 </td>
             </tr>
             <tr>
                 <td>Agama</td>
                 <td>
                     <select required>
-                        <option value ="1">Islam</option>
-                        <option value ="2">Katolik</option>
-                        <option value ="3">Protestan</option>
-                        <option value ="4">Buddha</option>
-                        <option value ="5">Hindu</option>
-                        <option value ="6">Konghucu</option>
+                        <option value = "Islam">Islam</option>
+                        <option value = "Katolik">Katolik</option>
+                        <option value = "Protestan">Protestan</option>
+                        <option value = "Buddha">Buddha</option>
+                        <option value = "Hindu">Hindu</option>
+                        <option value = "Konghucu">Konghucu</option>
                     </select>
                 </td>
             </tr>
             <tr>
                 <td>Hobi</td>
                 <td>
-                    <label>Membaca Buku <input type = "checkbox"></label>
-                    <label>Menulis <input type = "checkbox"></label>
-                    <label>dll <input type = "checkbox"></label>
+                    <label>Membaca Buku <input type = "checkbox" name = "hobi[]" value = "Membaca Buku"></label>
+                    <label>Menulis <input type = "checkbox" name = "hobi[]" value = "Menulis"></label>
+                    <label>dll <input type = "checkbox" name = "hobi[]" value = "dll"></label>
                 </td>
             </tr>
             <tr>
@@ -69,7 +69,7 @@
             </tr>
             <tr>
                 <td>Foto 3X4</td>
-                <td><input type = "file" required></td>
+                <td><input type = "file" accept="image/*" required></td>
             </tr>
             <tr>
                 <td colspan="2" align="center">

@@ -1,0 +1,22 @@
+/*Style*/
+body {
+    background-color:#526475;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    color: red;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+span {
+    background-color: yellow;
+    color: black;
+}
